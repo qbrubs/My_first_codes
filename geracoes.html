@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<script>
+
+function pulaLinha() {
+
+    document.write("<br>");
+
+}
+
+function mostra(frase) {
+
+    document.write(frase);
+    pulaLinha();
+
+}
+    
+var portugueses = 1500
+var mediaFilhos = 28
+var anoAtual = 2022
+var anosPassados = (portugueses - anoAtual)
+var mediaGeracoes = (anosPassados / mediaFilhos)
+
+
+    mostra("Os portugueses chegaram ao Brasil em 1500 e desde então passaram " + (anosPassados) + "anos.");
+    mostra("Desde então passaram muitas gerações com uma média de 28 anos cada.");
+    mostra("O número total de gerações passadas desde 1500 até o presente é de: " + Math.round(mediaGeracoes));
+
+
+</script>

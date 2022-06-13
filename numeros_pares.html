@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<h1>Copa do mundo!</h1>
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write("<big>" + frase + "</big>");
+        pulaLinha();
+    }
+
+    var numeroPar = 2;
+
+    while(numeroPar <= 100) {
+
+        mostra(numeroPar + " é um número par!")
+        numeroPar = numeroPar + 2;
+
+    }
+
+    mostra("Fim!")
+
+
+
+</script>

@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    function drawRect(x, y, size, color) {
+        
+        var tela = document.querySelector("canvas");
+        var pincel = tela.getContext("2d");
+
+        pincel.fillStyle = color;
+        pincel.fillRect(x, y, size, size);
+        pincel.strokeStyle = "white";
+        pincel.strokeRect(x, y, size, size);
+
+    }
+
+    function drawText(text, x, y) {
+
+        var tela = document.querySelector("canvas");
+        var pincel = tela.getContext("2d");
+
+        pincel.font = "20px Georgia";
+        pincel.fillStyle = "black";
+        pincel.fillText(text, x, y);
+
+    }
+
+    drawText ("What is the fraction?", 50, 30);
+
+    var y = 50;
+    drawRect(50, 50, 100, "lightgreen");
+    drawRect(150, 50, 100, "lightgreen");
+    drawRect(250, 50, 100, "lightgreen");
+    drawRect(350, 50, 100, "lightgreen");
+
+    
+
+</script>
